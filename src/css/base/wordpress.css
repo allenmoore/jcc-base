@@ -1,0 +1,130 @@
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	max-width: 100%;
+	height: auto;
+}
+
+.alignleft {
+	display: block;
+	margin-bottom: var(--gutter-base);
+	max-width: 100%;
+}
+
+.alignright {
+	display: block;
+	margin-bottom: var(--gutter-base);
+	max-width: 100%;
+}
+
+/* stylelint-disable no-eol-whitespace, at-rule-empty-line-before, comment-empty-line-before, rule-empty-line-before */
+@media (--bp-medium) {
+
+	.alignleft {
+		float: left;
+		margin-right: var(--gutter-base);
+		max-width: 60%;
+	}
+
+	.alignrightt {
+		float: right;
+		margin-left: var(--gutter-base);
+		max-width: 60%;
+	}
+}
+/* stylelint-enable no-eol-whitespace, at-rule-empty-line-before, comment-empty-line-before, rule-empty-line-before */
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+
+.alignnone {
+	margin: 1.5rem 0;
+}
+
+p > .alignnone {
+	margin: 0;
+}
+
+.wp-caption {
+	background: var(--color-white);
+	max-width: 100%;
+	padding: 0;
+	text-align: center;
+}
+
+.wp-caption.alignnone {
+	margin: 1.25rem 0;
+}
+
+.wp-caption.alignright {
+	margin: 1.25rem 0 1.25rem 1.25rem;
+}
+
+.wp-caption.alignleft {
+	margin: 1.25rem 1.25rem 1.25rem 0;
+}
+
+.wp-caption > .wp-caption-text {
+	padding: .95rem;
+	margin: 0;
+	line-height: 1.5;
+	font-size: .6875rem;
+	text-align: left;
+}
+
+.wp-caption > img {
+	display: block;
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+
+.sticky {
+	background-color: var(--color-black);
+	background-clip: padding-box;
+}
+
+.gallery-caption {
+	display: block;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+code,
+kbd,
+tt,
+var,
+samp,
+pre {
+	font-family: monospace;
+	font-size: .875rem;
+	hyphens: none;
+}
+
+code {
+	padding: .25rem;
+	border: .1rem solid var(--color-black);
+	background-color: var(--color-white);
+	white-space: pre;
+}
+
+pre {
+	max-width: 100%;
+	padding: .75rem;
+	margin-bottom: 1.5rem;
+	border: .125rem solid var(--color-black);
+	background-color: var(--color-white);
+	line-height: 1.2;
+	overflow: auto;
+	white-space: pre;
+	word-wrap: break-word;
+}

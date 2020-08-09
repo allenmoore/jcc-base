@@ -1,0 +1,33 @@
+.scroll-button.-down {
+	position: absolute;
+	right: 50%;
+	bottom: var(--gutter-base);
+	left: 50%;
+	width: 2.625rem;
+	height: 2rem;
+	padding: 0;
+	margin-right: -1.3125rem;
+	margin-left: -1.3125rem;
+	border: 0;
+	outline: 0;
+	background-color: transparent;
+	opacity: .75;
+	z-index: 15;
+	cursor: pointer;
+
+	@media (--bp-small) {
+		bottom: var(--gutter-medium);
+		width: 3.9375rem;
+		height: 1.96875rem;
+	}
+	@media (--bp-large) {
+		bottom: var(--gutter-large);
+		width: 5.25rem;
+		height: 2.625rem;
+	}
+}
+
+.scroll-button:hover,
+.scroll-button:focus {
+	opacity: .9;
+}

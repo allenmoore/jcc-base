@@ -1,0 +1,11 @@
+.hero-content {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: stretch;
+	order: 0;
+	flex: 0 1 auto;
+	align-self: auto;
+	z-index: 11;
+}

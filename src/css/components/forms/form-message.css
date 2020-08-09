@@ -1,0 +1,13 @@
+.form-message {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: stretch;
+	order: 0;
+	flex: 0 1 100%;
+	align-self: auto;
+	font-size: 1.125rem;
+	color: var(--color-gray-light);
+	text-align: center;
+}

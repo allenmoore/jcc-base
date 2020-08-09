@@ -1,0 +1,38 @@
+.form-row {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: stretch;
+	order: 0;
+	flex: 0 1 auto;
+	align-self: auto;
+	margin-bottom: calc(var(--gutter-base) / 2);
+}
+
+.form-row.-hidden {
+	display: none;
+	visibility: hidden;
+}
+
+.form-row:nth-last-of-type(1) {
+	margin-bottom: 0;
+}
+
+.form-row > .description {
+	margin-bottom: .5rem;
+	text-transform: uppercase;
+}
+
+@media (--bp-medium) {
+
+	.form-row {
+		margin-bottom: calc(var(--gutter-medium) / 2);
+	}
+}
+@media (--bp-large) {
+
+	.form-row {
+		margin-bottom: calc(var(--gutter-large) / 2);
+	}
+}

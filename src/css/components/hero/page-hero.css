@@ -1,0 +1,68 @@
+.page-hero {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	align-items: stretch;
+	flex: 1 0 auto;
+	align-self: auto;
+	width: auto;
+	height: auto;
+	padding-top: 3.75rem;
+	background-color: var(--color-gray-dark);
+	overflow: hidden;
+	z-index: 10;
+}
+
+.page-hero:before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: center / cover no-repeat var(--color-black) url(../images/jcc-students-background.jpg);
+	opacity: .2;
+	z-index: 10;
+	content: '';
+}
+
+.page-hero:after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 100%);
+	z-index: 11;
+	content: '';
+}
+
+/* stylelint-disable selector-max-specificity, comment-empty-line-before, rule-empty-line-before */
+.logged-in .page-hero:before,
+.logged-in .page-hero:after {
+	top: 3.8125rem;
+}
+/* stylelint-enable rule-empty-line-before */
+
+/* stylelint-disable no-eol-whitespace, at-rule-empty-line-before */
+@media (--wp-medium-min) {
+
+	.logged-in .page-hero {
+		padding-top: 3.8125rem;
+	}
+}
+
+@media (--bp-large) {
+
+	.page-hero,
+	.logged-in .page-hero {
+		padding-top: 5rem;
+	}
+	
+	.logged-in .page-hero:before,
+	.logged-in .page-hero:after {
+		top: 5rem;
+	}
+}
+/* stylelint-enable selector-max-specificity, no-eol-whitespace, at-rule-empty-line-before, comment-empty-line-before */

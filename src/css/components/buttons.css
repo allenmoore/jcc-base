@@ -1,0 +1,128 @@
+/* stylelint-disable */
+button:not([class]),
+button:not(.mce-btn .button),
+input[type=button]:not([class]),
+input[type=reset]:not([class]),
+input[type=submit]:not([class]),
+.button {
+	padding: .875rem 1.75rem;
+	margin-right: 1rem;
+	border: 0;
+	border-radius: .25rem;
+	font-size: .875rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+button:nth-last-of-type(1),
+input[type=button]:nth-last-of-type(1),
+input[type=reset]:nth-last-of-type(1),
+input[type=submit]:nth-last-of-type(1),
+.button:nth-last-of-type(1) {
+	margin-right: 0;
+}
+
+button:not([class]),
+button:not(.mce-btn .button),
+input[type=button]:not([class]),
+input[type=reset]:not([class]),
+input[type=submit]:not([class]),
+.button.-primary {
+	background-color: var(--color-blue);
+	color: var(--color-white);
+}
+
+button:not([class]):hover,
+button:not([class]):focus,
+button:not(.mce-btn .button):hover,
+button:not(.mce-btn .button):focus,
+input[type=button]:not([class]):hover,
+input[type=button]:not([class]):focus,
+input[type=reset]:not([class]):hover,
+input[type=reset]:not([class]):focus,
+input[type=submit]:not([class]):hover,
+input[type=submit]:not([class]):focus,
+.button.-primary:hover,
+.button.-primary:focus {
+	background-color: var(--color-blue-dark);
+}
+
+.button.-bordered.-primary {
+	border: .125rem solid var(--color-blue);
+	background-color: transparent;
+	color: var(--color-blue);
+}
+
+.button.-bordered.-primary:hover,
+.button.-bordered.-primary:focus {
+	background-color: var(--color-blue-dark);
+	color: var(--colorwhite);
+	text-decoration: none;
+}
+
+.button.-secondary {
+	background-color: var(--color-blue-dark);
+	color: var(--color-white);
+}
+
+.button.-secondary:hover,
+.button.-secondary:focus {
+	background-color: var(--color-blue);
+}
+
+.button.-bordered.-secondary {
+	border: .125rem solid var(--color-blue-dark);
+	background-color: transparent;
+	color: var(--color-blue-dark);
+}
+
+.button.-bordered.-secondary:hover,
+.button.-bordered.-secondary:focus {
+	background-color: var(--color-blue-dark);
+	color: var(--color-white);
+}
+
+.button.-gray {
+	background-color: var(--color-gray);
+	color: var(--color-white);
+}
+
+.button.-gray:hover,
+.button.-gry:focus {
+	background-color: var(--color-gray)Dark;
+}
+
+.button.-bordered.-gray {
+	border: .125rem solid var(--color-gray);
+	background-color: transparent;
+	color: var(--color-gray);
+}
+
+.button.-bordered.-gray:hover,
+.button.-bordered.-gray:focus {
+	background-color: var(--color-gray);
+	color: var(--colorwhite);
+}
+
+.main-navigation > .button {
+	flex: 0 0 auto;
+	width: calc(100% - 4rem);
+	margin-right: 2rem;
+	margin-left: 2rem;
+}
+
+@media (--bp-small) {
+
+	button:not([class]),
+	button:not(.mce-btn .button),
+	input[type=button]:not([class]),
+	input[type=reset]:not([class]),
+	input[type=submit]:not([class]),
+	.button {
+		padding: 1rem 2rem;
+		font-size: 1rem;
+	}
+}
+
+/* stylelint-enable */

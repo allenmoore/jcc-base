@@ -1,0 +1,40 @@
+/* stylelint-disable declaration-no-important, rule-empty-line-before, comment-empty-line-before, function-url-quotes, property-no-vendor-prefix, selector-max-specificity, selector-max-compound-selectors, no-descending-specificity */
+.field-label,
+.gfield_label,
+.gform_wrapper .gfield_repeater_cell .gfield_label {
+	display: none !important;
+	visibility: hidden;
+	order: 0;
+	flex: 0 1 100%;
+	align-self: auto;
+	margin-bottom: .25rem;
+	line-height: inherit !important;
+	font-size: .75rem !important;
+	font-weight: normal !important;
+	color: var(--color-gray-dark);
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.field-label.-radio {
+	position: relative;
+	display: flex;
+	visibility: visible;
+	order: 1;
+	flex: 0 1 auto;
+	align-self: auto;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	padding-left: 2rem;
+	margin-bottom: 0;
+	z-index: 15;
+}
+
+.gfield_repeater .gfield_label,
+.gfield.-visible > .field-label,
+.gfield.-visible > .gfield_label,
+.gform_wrapper .gfield_repeater_cell .gfield_label {
+	display: flex !important;
+	visibility: visible;
+}
+/* stylelint-enable declaration-no-important, rule-empty-line-before, comment-empty-line-before, function-url-quotes, property-no-vendor-prefix, selector-max-specificity, selector-max-compound-selectors, no-descending-specificity */

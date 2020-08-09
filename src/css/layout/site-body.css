@@ -1,0 +1,10 @@
+.site-body {
+	display: flex;
+	flex-flow: column nowrap;
+	min-height: 100%;
+	background-color: var(--color-white);
+	font-family: var(--primary-font);
+	font-size: 1rem;
+	color: var(--color-gray-dark);
+	line-height: 1.5;
+}

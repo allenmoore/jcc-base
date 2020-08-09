@@ -1,0 +1,10 @@
+.section-header {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: flex-start;
+	align-items: flex-start;
+	order: 0;
+	flex: 0 1 auto;
+	align-self: auto;
+}

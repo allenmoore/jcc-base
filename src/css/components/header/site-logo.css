@@ -1,0 +1,26 @@
+.site-logo {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-content: stretch;
+	align-items: stretch;
+	order: 0;
+	flex: 0 1 7.9345rem; /* 127px */
+	align-self: auto;
+	width: 7.9345rem;
+	padding-top: .4375rem;
+	padding-bottom: .4375rem;
+	margin-top: 0;
+	margin-bottom: 0;
+	z-index: 12;
+}
+
+@media (--bp-large) {
+
+	.site-logo {
+		flex-basis: 10rem; /* 160px */
+		width: 10rem;
+		padding-top: .6875rem;
+		padding-bottom: .6875rem;
+	}
+}

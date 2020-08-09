@@ -1,0 +1,173 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	padding-bottom: 0;
+	margin-top: 1rem;
+	margin-bottom: 1.25rem;
+	font-weight: bold;
+	color: var(--color-black);
+	line-height: 1.715;
+	letter-spacing: .05rem;
+}
+
+@media (--bp-small) {
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin-top: 1.25rem;
+		margin-bottom: 1.5rem;
+	}
+}
+@media (--bp-large) {
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin-top: 1.5rem;
+		margin-bottom: 1.75rem;
+	}
+}
+
+h1 {
+	font-size: 2.5rem; /* 40px */
+}
+
+h2 {
+	font-size: 2rem; /* 32px */
+}
+
+h3 {
+	font-size: 1.75rem; /* 28px */
+}
+
+h4 {
+	font-size: 1.5rem; /* 24px */
+}
+
+h5 {
+	font-size: 1.25rem; /* 20px */
+}
+
+h6 {
+	font-size: 1.125rem; /* 18px */
+}
+
+a,
+a:visited {
+	color: var(--color-blue);
+}
+
+a:hover,
+a:focus {
+	color: var(--color-blue-dark);
+	text-decoration: underline;
+}
+
+p {
+	margin: 1rem 0;
+}
+
+p:nth-last-of-type(1) {
+	margin-bottom: 0;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	padding: 0 2.5rem;
+	line-height: 2.375;
+	font-weight: 300;
+	font-size: 2rem;
+	font-style: italic;
+	color: var(--color-black);
+}
+
+@media (--bp-small) {
+
+	blockquote {
+		padding: 0 2.75rem;
+		line-height: 3.375;
+		font-size: 2.8125rem;
+	}
+}
+
+.wp-caption-text {
+	line-height: 1.3;
+	font-size: .75rem;
+}
+
+pre {
+	max-width: 100%;
+	padding: 1.6rem;
+	margin-bottom: 1.6rem;
+	background-color: var(--color-gray-light);
+	line-height: 1.6;
+	overflow: auto;
+	font-family: 'Courier 10 Pitch', Courier, monospace; /* stylelint-disable-line font-family-name-quotes */
+	font-size: 1.125rem;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-family: 'Monaco', 'Consolas', 'Andale Mono', 'DejaVu Sans Mono', monospace;
+	font-size: 1rem;
+}
+
+abbr,
+acronym {
+	border-bottom: .0625rem dotted var(--color-gray-light);
+	cursor: help;
+}
+
+mark,
+ins {
+	background: var(--color-gray-light);
+	text-decoration: none;
+}
+
+sup,
+sub {
+	position: relative;
+	height: 0;
+	line-height: 0;
+	vertical-align: baseline;
+	font-size: 75%;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+small {
+	font-size: 75%;
+}
+
+big {
+	font-size: 125%;
+}

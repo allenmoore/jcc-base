@@ -1,0 +1,18 @@
+.footer-social {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	order: 0;
+	flex: 0 1 100%;
+	align-self: auto;
+	margin: 0 auto var(--gutter-base);
+}
+
+@media (--bp-medium) {
+
+	.footer-social {
+		margin-bottom: var(--gutter-medium);
+	}
+}

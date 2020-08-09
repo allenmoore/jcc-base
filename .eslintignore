@@ -1,0 +1,7 @@
+src/js/vendor
+src/js/admin/vendor
+src/js/frontend/vendor
+src/js/shared/vendor
+webpack.config.babel.js
+tests
+/src/css/global/colors.css

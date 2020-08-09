@@ -1,0 +1,21 @@
+.section-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: stretch;
+	align-items: stretch;
+	order: 1;
+	flex: 0 1 auto;
+	align-self: auto;
+}
+
+.section-content.-featured {
+	flex-direction: column;
+}
+
+@media (--bp-small) {
+
+	.section-content.-featured {
+		flex-direction: row;
+	}
+}

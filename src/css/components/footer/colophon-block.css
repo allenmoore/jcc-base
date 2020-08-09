@@ -1,0 +1,22 @@
+.colophon-block {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+	align-items: flex-start;
+	order: 0;
+	flex: 0 1 auto;
+	align-self: auto;
+	padding-bottom: var(--gutter-base);
+	line-height: 1;
+	font-size: .875rem;
+}
+
+.colophon-block.-description {
+	line-height: 1.5;
+	color: var(--color-blue-lightest);
+}
+
+.colophon-block.-address {
+	font-size: 1rem;
+}

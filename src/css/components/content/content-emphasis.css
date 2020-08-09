@@ -1,0 +1,31 @@
+.content-emphasis {
+	display: block;
+	width: 100%;
+	font-size: 1rem;
+	font-style: italic;
+}
+
+/* stylelint-disable selector-max-specificity, rule-empty-line-before, comment-empty-line-before, property-no-unknown */
+.content-emphasis:first-child:first-letter {
+	float: left;
+	padding-top: .25rem;
+	padding-right: .75rem;
+	padding-left: .5rem;
+	line-height: 5rem;
+	font-size: 6rem;
+	color: var(--color-blue-dark);
+}
+/* stylelint-enable selector-max-specificity, rule-empty-line-before, comment-empty-line-before, property-no-unknown */
+
+@media (--bp-medium) {
+
+	.content-emphasis {
+		font-size: 1.125rem;
+	}
+}
+@media (--bp-large) {
+
+	.content-emphasis {
+		font-size: 1.25rem;
+	}
+}

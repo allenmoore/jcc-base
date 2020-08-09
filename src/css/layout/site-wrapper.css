@@ -1,0 +1,6 @@
+.site-wrapper {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	z-index: 2;
+}

@@ -1,0 +1,16 @@
+.scroll-button {
+	position: fixed;
+	right: 1.25rem;
+	bottom: 1.25rem;
+	padding: .84375rem .5625rem;
+	border: 0;
+	background-color: var(--color-blue-medium-75);
+	text-transform: uppercase;
+	z-index: 99;
+	cursor: pointer;
+}
+
+.scroll-button:hover,
+.scroll-button:focus {
+	background-color: var(--color-blue-medium);
+}

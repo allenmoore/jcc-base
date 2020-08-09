@@ -1,0 +1,14 @@
+.hero-image {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: stretch;
+	order: 0;
+	flex: 0 1 auto;
+	align-self: auto;
+	margin: 0 auto;
+	text-transform: uppercase;
+	z-index: 10;
+}

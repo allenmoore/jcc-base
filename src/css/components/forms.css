@@ -1,0 +1,38 @@
+.ccf-form {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: stretch;
+}
+
+.form-group {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: stretch;
+	order: 0;
+	flex: 0 1 100%;
+	align-self: auto;
+}
+
+.main-label {
+	order: 1;
+	flex: 0 1 100%;
+	align-self: auto;
+}
+
+.ccf-form input {
+	order: 0;
+	flex: 0 1 100%;
+	align-self: auto;
+	padding: .5rem .25rem;
+	margin-bottom: .75rem;
+	border: none;
+	border-bottom: 2px solid var(--color-white);
+	outline: none;
+	background-color: var(--color-white);
+	font-size: 1.5rem;
+	color: var(--color-black);
+}

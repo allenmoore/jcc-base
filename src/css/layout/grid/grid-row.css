@@ -1,0 +1,28 @@
+.grid-row {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: stretch;
+	width: 100%;
+	margin-bottom: var(--gutter-base);
+}
+
+@media (--bp-medium) {
+
+	.grid-row {
+		margin: 0 var(--row-medium) var(--gutter-medium);
+	}
+}
+@media (--bp-large) {
+
+	.grid-row {
+		margin-right: var(--row-large);
+		margin-bottom: var(--gutter-large);
+		margin-left: var(--row-large);
+	}
+}
+
+.grid-row:nth-last-of-type(1) {
+	margin-bottom: 0;
+}

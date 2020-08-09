@@ -1,0 +1,20 @@
+.footer-logo {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	order: 0;
+	flex: 0 1 100%;
+	align-self: auto;
+	margin: 0 auto var(--gutter-base);
+}
+
+/* stylelint-disable no-eol-whitespace, at-rule-empty-line-before, comment-empty-line-before */
+@media (--bp-medium) {
+	
+	.footer-logo {
+		margin-bottom: var(--gutter-medium);
+	}
+}
+/* stylelint-enable no-eol-whitespace, at-rule-empty-line-before, comment-empty-line-before */

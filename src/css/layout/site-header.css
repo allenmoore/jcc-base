@@ -1,0 +1,31 @@
+.site-header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: flex-start;
+	order: 0;
+	flex: none;
+	align-self: auto;
+	background-color: var(--color-black);
+	border-bottom: .0625rem solid var(--color-gray-medium);
+	overflow: hidden;
+	z-index: 100;
+}
+
+.logged-in .site-header {
+	top: 2.875rem;
+}
+
+/* stylelint-disable no-eol-whitespace, at-rule-empty-line-before, comment-empty-line-before */
+@media (--wp-medium-min) {
+	
+	.logged-in .site-header {
+		top: 2rem;
+	}
+}
+/* stylelint-enable no-eol-whitespace, at-rule-empty-line-before, comment-empty-line-before */

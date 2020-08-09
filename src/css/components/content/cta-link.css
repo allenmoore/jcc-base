@@ -1,0 +1,37 @@
+.cta-link {
+	padding: 1rem 2rem;
+	margin: var(--gutter-base) auto 0;
+	background-color: var(--color-blue-dark);
+	font-size: 1.125rem;
+	font-weight: bold;
+	color: var(--color-white);
+	text-transform: uppercase;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.cta-link:visited {
+	color: var(--color-white);
+}
+
+.cta-link:hover,
+.cta-link:focus {
+	background-color: var(--color-gray-dark);
+	color: var(--color-white);
+	text-decoration: none;
+}
+
+/* stylelint-disable at-rule-empty-line-before, comment-empty-line-before, no-eol-whitespace */
+@media (--bp-medium) {
+	
+	.cta-link {
+		margin-top: var(--gutter-medium);
+	}
+}
+@media (--bp-large) {
+
+	.cta-link {
+		margin-top: var(--gutter-large);
+	}
+}
+/* stylelint-enable at-rule-empty-line-before, comment-empty-line-before, no-eol-whitespace */

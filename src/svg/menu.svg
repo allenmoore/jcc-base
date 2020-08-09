@@ -1,0 +1,5 @@
+<svg id="js-menu-navigation-icon" class="svg-menu" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+	<path class="bar -top" d="M32 5a1 1 0 00-1-1H1a1 1 0 00-1 1v2a1 1 0 001 1h30a1 1 0 001-1V5z"/>
+	<path class="bar -middle" d="M24 15a1 1 0 00-1-1H1a1 1 0 00-1 1v2a1 1 0 001 1h22a1 1 0 001-1v-2z"/>
+	<path class="bar -bottom" d="M32 25a1 1 0 00-1-1H1a1 1 0 00-1 1v2a1 1 0 001 1h30a1 1 0 001-1v-2z"/>
+</svg>

@@ -1,0 +1,6 @@
+.cell-definition {
+	padding: .5rem .75rem;
+	border: .0625rem solid var(--color-gray-medium);
+	border-width: 0 0 .0625rem;
+	vertical-align: top;
+}

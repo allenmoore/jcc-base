@@ -1,0 +1,15 @@
+.svg-arrow {
+	position: relative;
+	width: 1.5rem;
+	height: .9375rem;
+	vertical-align: middle;
+	fill: var(--color-white-75);
+	pointer-events: none;
+}
+
+/* stylelint-disable selector-max-compound-selectors, selector-max-specificity, rule-empty-line-before, comment-empty-line-before */
+.navigation-button:hover > .svg-arrow,
+.navigation-button:focus > .svg-arrow {
+	fill: var(--color-white);
+}
+/* stylelint-enable selector-max-compound-selectors, selector-max-specificity, rule-empty-line-before, comment-empty-line-before */

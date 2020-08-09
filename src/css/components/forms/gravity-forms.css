@@ -1,0 +1,245 @@
+/* stylelint-disable selector-max-specificity, no-descending-specificity, declaration-no-important, rule-empty-line-before, at-rule-empty-line-before, comment-empty-line-before, no-eol-whitespace, selector-max-compound-selectors, selector-no-qualifying-type, declaration-block-no-duplicate-properties, block-closing-brace-newline-before */
+.gform_fields {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: stretch;
+	order: 0;
+	flex: 0 1 auto;
+	align-self: auto;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+
+.gfield {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: stretch;
+	order: 0;
+	flex: 0 1 100%;
+	align-self: auto;
+	padding-right: 0 !important;
+	margin-top: 0 !important;
+	margin-bottom: var(--gutter-base);
+}
+
+.gsection {
+	padding: 0 !important;
+	margin: 0 0 var(--gutter-base) 0 !important;
+	border-bottom: .0625rem solid var(--color-gray-light) !important;
+}
+
+.site-content li.gfield.field_description_below + li.gsection {
+	margin-top: 0 !important;
+}
+
+@media (--bp-medium) {
+	
+	.gfield,
+	.gsection {
+		margin-bottom: var(--gutter-medium) !important;
+	}
+}
+
+@media (--bp-large) {
+
+	.gfield,
+	.gsection {
+		margin-bottom: var(--gutter-large) !important;
+	}
+}
+
+.gsection_title {
+	font-size: 2rem !important;
+	font-weight: normal !important;
+}
+
+.ginput_container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: flex-start;
+	order: 0;
+	flex: 0 1 100%;
+	align-self: auto;
+	margin-top: 0 !important;
+}
+
+.ginput_container_address > .ginput_full {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: stretch;
+	order: 0;
+	flex: 1 0 100%;
+	align-self: auto;
+}
+
+.ginput_container_address > .address_city,
+.ginput_container_address > .address_state,
+.ginput_container_address > .address_zip {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: stretch;
+	order: 0;
+	flex: 1 0 100%;
+	align-self: auto;
+}
+
+.ginput_container_address > .ginput_full,
+.ginput_container_address > .address_city,
+.ginput_container_address > .address_state,
+.ginput_container_address > .address_zip {
+	padding-right: 0 !important;
+	margin-right: 0 !important;
+	margin-bottom: var(--gutter-base) !important;
+}
+
+@media (--bp-medium) {
+
+	.ginput_container_address > .ginput_full {
+		margin-bottom: var(--gutter-medium) !important;
+	}
+
+	.ginput_container_address > .address_city,
+	.ginput_container_address > .address_state,
+	.ginput_container_address > .address_zip {
+		flex-basis: calc(((100% / 12) * 3) - calc(2 * var(--gutter-medium)));
+		margin-bottom: 0 !important;
+	}
+
+	.ginput_container_address > .address_state {
+		margin-right: var(--gutter-medium) !important;
+		margin-left: var(--gutter-medium) !important;
+	}
+}
+
+@media (--bp-large) {
+
+	.ginput_container_address > .ginput_full {
+		margin-bottom: var(--gutter-large) !important;
+	}
+
+	.ginput_container_address > .address_city,
+	.ginput_container_address > .address_state,
+	.ginput_container_address > .address_zip {
+		flex-basis: calc(((100% / 12) * 3) - calc(2 * var(--gutter-large)));
+		margin-bottom: 0 !important;
+	}
+
+	.ginput_container_address > .address_state {
+		margin-right: var(--gutter-large) !important;
+		margin-left: var(--gutter-large) !important;
+	}
+}
+
+.gfield_description {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: stretch;
+	order: 0;
+	flex: 0 1 100%;
+	align-self: auto;
+	max-height: none !important;
+	padding: 0 !important;
+	margin-top: .25rem !important;
+	border: 0 !important;
+	overflow: auto !important;
+	font-size: .625rem !important;
+	font-style: italic;
+	color: var(--color-gray-medium);
+}
+
+.ginput_container > .wp-editor-wrap {
+	flex: 0 1 100%;
+}
+
+.gfield_signature_container,
+.gfield_signature_container > canvas {
+	width: 100% !important;
+}
+
+.gfield.-visible > div:not([class]) {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: stretch;
+	order: 0;
+	flex: 0 1 100%;
+	align-self: auto;
+}
+
+.gfield_signature_container + div:not([class]) {
+	width: 100% !important;
+}
+
+.gform_wrapper input.datepicker_with_icon.small,
+.gform_wrapper input.datepicker_with_icon.medium,
+.gform_wrapper input.datepicker_with_icon.large {
+	width: calc(100% - 24px);
+}
+
+.gform_wrapper .gfield_error input.datepicker_with_icon.small,
+.gform_wrapper .gfield_error input.datepicker_with_icon.medium,
+.gform_wrapper .gfield_error input.datepicker_with_icon.large {
+	width: calc(100% - 32px);
+}
+
+.gform_wrapper input.datepicker.datepicker_with_icon {
+	margin-right: 4px !important;
+	display: -moz-inline-stack;
+	display: inline-block;
+}
+body .gform_wrapper img.ui-datepicker-trigger {
+	width: 17px !important;
+	height: 16px !important;
+	display: -moz-inline-stack;
+	display: inline-block;
+}
+
+.gform_wrapper li.gfield fieldset {
+	border: 0;
+}
+
+.gfield_repeater_wrapper {
+	flex: 0 1 100%;
+}
+
+.gform_wrapper textarea {
+	display: flex;
+	order: 0;
+	flex: 0 1 100%;
+	align-self: auto;
+	padding: .625rem !important;
+	margin-top: 0;
+	margin-bottom: 0 !important;
+	border: .125rem solid var(--color-gray-dark);
+	border-radius: 0;
+	outline: 0;
+	background-color: var(--color-white);
+	font-size: 1rem !important;
+	color: var(--color-gray-dark);
+	line-height: 1.25;
+}
+
+@media (--bp-medium) {
+	
+	.gform_wrapper .top_label input.small.datepicker,
+	.gform_wrapper .top_label input.medium.datepicker,
+	.gform_wrapper .top_label input.large.datepicker {
+		width: auto;
+	}   
+}
+/* stylelint-enable selector-max-specificity, no-descending-specificity, declaration-no-important, rule-empty-line-before, at-rule-empty-line-before, comment-empty-line-before, no-eol-whitespace, selector-max-compound-selectors, selector-no-qualifying-type, declaration-block-no-duplicate-properties, block-closing-brace-newline-before */

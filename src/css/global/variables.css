@@ -1,0 +1,14 @@
+/*
+ * Variables
+ */
+
+:root {
+	--primary-font: 'Open Sans', sans-serif;
+	--max-width: 85%;
+	--gutter-base: 1rem;
+	--gutter-medium: 2rem;
+	--gutter-large: 3rem;
+	--row-base: -.5rem;
+	--row-medium: -1rem;
+	--row-large: -1.5rem;
+}

@@ -1,0 +1,18 @@
+.page-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: flex-start;
+	align-items: center;
+	flex: 1 0 auto;
+	width: 100%;
+	padding-top: var(--gutter-base);
+	padding-bottom: var(--gutter-base);
+	margin: 0 auto;
+}
+
+.page-section.-action {
+	border-top: .0625rem solid var(--color-gray);
+	border-bottom: .0625rem solid var(--color-gray);
+	background-color: var(--color-gray-light);
+}

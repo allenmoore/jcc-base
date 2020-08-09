@@ -1,0 +1,12 @@
+.svg-youtube {
+	width: 1.5rem;
+	height: 1.0625rem;
+	fill: var(--color-gray);
+}
+
+/* stylelint-disable selector-max-specificity, rule-empty-line-before, comment-empty-line-before */
+.nav-link.-social:hover .svg-youtube,
+.nav-link.-social:focus .svg-youtube {
+	fill: var(--color-gray-medium);
+}
+/* stylelint-enable selector-max-specificity, rule-empty-line-before, comment-empty-line-before */

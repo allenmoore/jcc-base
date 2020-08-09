@@ -1,0 +1,13 @@
+.cell-header {
+	padding: .5rem .75rem;
+	border: .0625rem solid var(--color-gray-medium);
+	vertical-align: top;
+}
+
+.table-header .cell-header {
+	border-width: 0 0 .125rem;
+}
+
+.table-footer .cell-header {
+	border-width: .125rem 0 0;
+}

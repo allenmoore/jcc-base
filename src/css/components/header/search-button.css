@@ -1,0 +1,12 @@
+.search-button {
+	padding: 0 2.375rem;
+	border: 0;
+	background-color: transparent;
+	z-index: 12;
+	cursor: pointer;
+}
+
+.search-button:hover,
+.search-button:focus {
+	background-color: transparent;
+}

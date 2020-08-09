@@ -1,0 +1,31 @@
+/* stylelint-disable declaration-no-important, rule-empty-line-before, at-rule-empty-line-before, comment-empty-line-before, no-eol-whitespace, selector-max-specificity */
+.input-field,
+.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+	display: flex;
+	order: 0;
+	flex: 0 1 100%;
+	align-self: auto;
+	padding: .625rem 0 !important;
+	margin-top: 0;
+	margin-bottom: 0 !important;
+	border: 0;
+	border-bottom: .125rem solid var(--color-gray-dark);
+	border-radius: 0;
+	outline: 0;
+	background-color: var(--color-white);
+	font-size: 1rem !important;
+	color: var(--color-gray-dark);
+	line-height: 1.25;
+}
+
+.input-field:focus {
+	border-bottom-color: var(--color-blue);
+	color: var(--color-gray-dark);
+}
+
+.input-field::placeholder {
+	font-weight: normal;
+	color: var(--color-gray);
+	text-transform: uppercase;
+}
+/* stylelint-enable declaration-no-important, rule-empty-line-before, at-rule-empty-line-before, comment-empty-line-before, no-eol-whitespace, selector-max-specificity */

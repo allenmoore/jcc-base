@@ -1,0 +1,31 @@
+/*
+ * Colors
+ */
+
+:root {
+	--color-black: black;
+	--color-black-10: rgba(0, 0, 0, .1); /* black w/ 10% opacity */
+	--color-black-40: rgba(0, 0, 0, .4); /* black w/ 40% opacity */
+	--color-black-75: rgba(0, 0, 0, .75); /* black w/ 50% opacity */
+	--color-white: white;
+	--color-white-75: rgba(255, 255, 255, .75); /* white w/ 75% opacity */
+	--color-blue: rgba(0, 85, 184, 1); /* #0055b8 */
+	--color-blue-bright: rgba(1, 116, 255, 1); /* #0174ff */
+	--color-blue-medium: rgba(16, 69, 139, 1); /* #10458b */
+	--color-blue-medium-75: rgba(16, 69, 139, .75); /* #10458b w/ 75% opacity */
+	--color-blue-dark: rgba(31, 53, 94, 1); /* #1f355e */
+	--color-blue-light: rgba(115, 162, 216, 1); /* #73a2d8 */
+	--color-blue-light-75: rgba(115, 162, 216, .75); /* #73a2d8 */
+	--color-gray: rgba(164, 169, 173, 1); /* #a4a9ad */
+	--color-gray-medium: rgba(85, 87, 89, 1); /* #555759 */
+	--color-gray-dark: rgba(35, 33, 33, 1); /* #232121 */
+	--color-gray-light: rgba(205, 208, 210, 1); /* #cdd0d2 */
+	--color-orange: rgba(226, 67, 1, 1); /* #e24301 */
+	--color-orange-dark: rgba(185, 55, 1, 1); /* #b93701 */
+	--color-purple: rgba(150, 54, 141, 1); /* #96368d */
+	--color-purple-dark: rgba(123, 45, 116, 1); /* #7b2d74 */
+	--color-teal: rgba(0, 169, 143, 1); /* #00a98f */
+	--color-teal-dark: rgba(0, 139, 118, 1); /* #008b76 */
+	--color-yellow: rgba(237, 170, 0, 1); /* #edaa00 */
+	--color-yellow-dark: rgba(212, 145, 0, 1); /* #d49100 */
+}

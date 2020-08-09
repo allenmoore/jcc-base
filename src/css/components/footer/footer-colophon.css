@@ -1,0 +1,27 @@
+.footer-colophon {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: stretch;
+	order: 0;
+	flex: 0 1 100%;
+	align-self: auto;
+	font-size: .875rem;
+	font-weight: 300;
+	color: var(--color-white);
+}
+
+@media (--bp-small) {
+
+	.footer-colophon {
+		flex-basis: calc(33.33333333% - 1.33333333rem);
+		margin-right: var(--gutter-base);
+	}
+}
+@media (--bp-large) {
+
+	.footer-colophon {
+		flex-basis: calc(33.33333333% - 2.666666666rem);
+	}
+}

@@ -1,0 +1,41 @@
+.main-navigation {
+	position: fixed;
+	top: -6.25rem;
+	right: 0;
+	left: 0;
+	display: none;
+	visibility: hidden;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: stretch;
+	order: 0;
+	flex: 0 1 auto;
+	align-self: auto;
+	background-color: transparent;
+	transition: background .15s linear;
+	z-index: 99;
+}
+
+.main-navigation.-active {
+	display: flex;
+	visibility: visible;
+	height: auto;
+	background-color: var(--color-black);
+	transition: background .15s linear;
+}
+
+@media (--bp-large) {
+
+	.main-navigation {
+		position: relative;
+		top: initial;
+		right: initial;
+		left: initial;
+		display: flex;
+		visibility: visible;
+		flex-direction: row;
+		padding-top: 1.1875rem;
+		padding-bottom: 1.1875rem;
+	}
+}

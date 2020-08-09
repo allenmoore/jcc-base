@@ -1,0 +1,33 @@
+.contact-form {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: stretch;
+	order: 0;
+	flex: 0 1 100%;
+	align-self: auto;
+	padding: var(--gutter-base);
+	background-color: var(--color-black-40);
+	font-size: .75rem;
+	color: var(--color-gray-light);
+}
+
+.contact-form.-hidden {
+	display: none;
+	visibility: hidden;
+	opacity: 0;
+}
+
+@media (--bp-medium) {
+
+	.contact-form {
+		padding: var(--gutter-medium);
+	}
+}
+@media (--bp-large) {
+
+	.contact-form {
+		padding: var(--gutter-large);
+	}
+}

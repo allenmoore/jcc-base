@@ -1,0 +1,12 @@
+.svg-twitter {
+	width: 1.5rem;
+	height: 1.5rem;
+	fill: var(--color-gray);
+}
+
+/* stylelint-disable selector-max-specificity, rule-empty-line-before, comment-empty-line-before */
+.nav-link.-social:hover .svg-twitter,
+.nav-link.-social:focus .svg-twitter {
+	fill: var(--color-gray-medium);
+}
+/* stylelint-enable selector-max-specificity, rule-empty-line-before, comment-empty-line-before */

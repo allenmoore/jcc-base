@@ -1,0 +1,8 @@
+.member-name {
+	padding-bottom: var(--gutter-base);
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 1rem;
+	font-weight: normal;
+	text-transform: uppercase;
+}

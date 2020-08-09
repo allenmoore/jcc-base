@@ -1,0 +1,27 @@
+.embed-container {
+	position: relative;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: stretch;
+	align-content: stretch;
+	align-items: stretch;
+	order: 0;
+	flex: 0 1 100%;
+	align-self: auto;
+	max-width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+	overflow: hidden;
+}
+
+/* stylelint-disable selector-max-specificity, rule-empty-line-before, comment-empty-line-before */
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/* stylelint-enable selector-max-specificity, rule-empty-line-before, comment-empty-line-before */

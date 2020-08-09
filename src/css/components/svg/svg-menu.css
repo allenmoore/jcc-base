@@ -1,0 +1,49 @@
+.svg-menu {
+	position: relative;
+	width: 2rem;
+	height: 2rem;
+	vertical-align: middle;
+	fill: var(--color-white);
+	pointer-events: none;
+}
+
+.svg-menu.-active {
+	margin-top: .0625rem;
+}
+
+/* stylelint-disable selector-max-compound-selectors, selector-max-specificity, rule-empty-line-before, comment-empty-line-before */
+.svg-menu > .bar {
+	opacity: 1;
+	transform: rotate(0);
+	transform-origin: 50% 50% 0;
+	transition: transform .3s ease-in-out, opacity .2s ease-in-out;
+}
+
+.svg-menu > .bar.-top {
+	transform-origin: 13% 30%;
+}
+
+.svg-menu > .bar.-bottom {
+	transform-origin: 10% 70%;
+}
+
+.navigation-button:hover > .svg-menu,
+.navigation-button:focus > .svg-menu {
+	fill: var(--color-white-75);
+}
+
+.navigation-button.-active .svg-menu > .bar.-top {
+	transform: rotate(45deg);
+	transition: transform .3s ease-in-out;
+}
+
+.navigation-button.-active .svg-menu > .bar.-middle {
+	opacity: 0;
+	transition: opacity .2s ease-in-out;
+}
+
+.navigation-button.-active .svg-menu > .bar.-bottom {
+	transform: rotate(-45deg);
+	transition: transform .3s ease-in-out;
+}
+/* stylelint-enable selector-max-compound-selectors, selector-max-specificity, rule-empty-line-before, comment-empty-line-before */

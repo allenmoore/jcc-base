@@ -1,0 +1,31 @@
+{
+	"name": "jcc/fndsesf",
+	"description": "A custom WordPress theme for Johnston Community College",
+	"version": "1.0.0",
+	"type": "wordpress-theme",
+	"keywords": [],
+	"homepage": "https://www.johnstoncc.edu",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Allen Moore",
+			"email": "lamoore@johnstoncc.edu",
+			"role": "Developer"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"JCC\\FndSESF\\": "includes"
+		},
+		"files": [
+			"includes/TemplateTags.php",
+			"includes/Modules/NavMenus/NavWalker.php",
+			"includes/Modules/NavMenus/SocialNavWalker.php"
+		]
+	},
+	"minimum-stability": "dev",
+	"require": {
+		"composer/installers": "~1.0",
+		"ext-mysqli": "*"
+	}
+}

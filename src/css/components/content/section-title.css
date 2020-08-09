@@ -1,0 +1,37 @@
+.section-title {
+	position: relative;
+	flex: 0 1 auto;
+	padding-bottom: var(--gutter-base);
+	margin: 0 auto;
+	line-height: 1;
+	font-size: 1.5rem;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.section-title:after {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 7.5rem;
+	height: .125rem;
+	margin: 0 auto;
+	background-color: var(--color-gray-light);
+	content: '';
+}
+
+@media (--bp-medium) {
+
+	.section-title {
+		padding-bottom: var(--gutter-medium);
+		font-size: 1.75rem;
+	}
+}
+@media (--bp-large) {
+
+	.section-title {
+		padding-bottom: var(--gutter-large);
+		font-size: 2rem;
+	}
+}

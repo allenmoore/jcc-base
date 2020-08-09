@@ -1,0 +1,5 @@
+/* stylelint-disable no-eol-whitespace, selector-max-specificity, comment-empty-line-before, rule-empty-line-before */
+.table-body > .table-row:nth-child(even) {
+	background-color: var(--color-gray);
+}
+/* stylelint-enable no-eol-whitespace, selector-max-specificity, comment-empty-line-before, rule-empty-line-before */

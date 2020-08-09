@@ -1,0 +1,47 @@
+.radio-group {
+	position: relative;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: stretch;
+	order: 0;
+	flex: 0 1 auto;
+	align-self: auto;
+}
+
+/* stylelint-disable selector-max-specificity, rule-empty-line-before, comment-empty-line-before */
+.radio-group > .check {
+	position: absolute;
+	top: .4375rem;
+	left: 0;
+	display: block;
+	width: 1rem;
+	height: 1rem;
+	border: .125rem solid var(--color-gray-light);
+	border-radius: 100%;
+	transition: border .15s linear;
+	z-index: 14;
+}
+
+.radio-field:checked ~ .check {
+	border-color: var(--color-blue-bright);
+}
+
+.radio-group > .check:before {
+	position: absolute;
+	top: .125rem;
+	left: .125rem;
+	display: block;
+	width: .75rem;
+	height: .75rem;
+	margin: auto;
+	border-radius: 100%;
+	transition: background .15s linear;
+	content: '';
+}
+
+.radio-field:checked ~ .check:before {
+	background-color: var(--color-blue-bright);
+}
+/* stylelint-enable selector-max-specificity, rule-empty-line-before, comment-empty-line-before */

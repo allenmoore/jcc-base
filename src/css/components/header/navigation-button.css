@@ -1,0 +1,22 @@
+.navigation-button {
+	padding: 0 2.375rem;
+	border: 0;
+	background-color: transparent;
+	color: var(--color-white);
+	text-transform: uppercase;
+	z-index: 99;
+	cursor: pointer;
+}
+
+.navigation-button:hover,
+.navigation-button:focus {
+	background-color: var(--color-black);
+}
+
+@media (--bp-large) {
+
+	.navigation-button {
+		display: none;
+		visibility: hidden;
+	}
+}

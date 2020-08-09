@@ -1,0 +1,30 @@
+.site-content {
+	position: relative;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: stretch;
+	flex: 1;
+	width: auto;
+	padding-top: var(--gutter-base);
+	padding-bottom: var(--gutter-base);
+}
+
+/* stylelint-disable rule-empty-line-before, at-rule-empty-line-before, comment-empty-line-before, no-eol-whitespace */
+@media (--bp-medium) {
+	
+	.site-content {
+		padding-top: var(--gutter-medium);
+		padding-bottom: var(--gutter-medium);
+	}
+}
+
+@media (--bp-large) {
+
+	.site-content {
+		padding-top: var(--gutter-large);
+		padding-bottom: var(--gutter-large);
+	}
+}
+/* stylelint-enable rule-empty-line-before, at-rule-empty-line-before, comment-empty-line-before, no-eol-whitespace */

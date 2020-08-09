@@ -1,0 +1,122 @@
+.grid-column {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: stretch;
+	order: 0;
+	flex: 1 0 100%;
+	align-self: auto;
+}
+
+.grid-column.-stacked {
+	flex-direction: column;
+}
+
+@media (--bp-medium) {
+
+	.grid-column {
+		margin-right: calc(var(--gutter-medium) / 2);
+		margin-left: calc(var(--gutter-medium) / 2);
+	}
+
+	.grid-column,
+	.grid-column.-one {
+		flex-basis: 100%;
+	}
+
+	.grid-column.-two {
+		flex-basis: calc(((100% / 12) * 2) - var(--gutter-medium));
+	}
+
+	.grid-column.-three {
+		flex-basis: calc(((100% / 12) * 3) - calc(2 * var(--gutter-medium)));
+	}
+
+	.grid-column.-four {
+		flex-basis: calc(((100% / 12) * 4) - calc(3 * var(--gutter-medium)));
+	}
+
+	.grid-column.-five {
+		flex-basis: calc(((100% / 12) * 5) - calc(4 * var(--gutter-medium)));
+	}
+
+	.grid-column.-six {
+		flex-basis: calc(((100% / 12) * 6) - calc(5 * var(--gutter-medium)));
+	}
+
+	.grid-column.-seven {
+		flex-basis: calc(((100% / 12) * 7) - (6 * var(--gutter-medium)));
+	}
+
+	.grid-column.-eight {
+		flex-basis: calc(((100% / 12) * 8) - calc(7 * var(--gutter-medium)));
+	}
+
+	.grid-column.-nine {
+		flex-basis: calc(((100% / 12) * 9) - calc(8 * var(--gutter-medium)));
+	}
+
+	.grid-column.-ten {
+		flex-basis: calc(((100% / 12) * 10) - calc(9 * var(--gutter-medium)));
+	}
+
+	.grid-column.-eleven {
+		flex-basis: calc(((100% / 12) * 11) - calc(10 * var(--gutter-medium)));
+	}
+
+	.grid-column.-twelve {
+		flex-basis: calc(((100% / 12) * 12) - calc(11 * var(--gutter-medium)));
+	}
+}
+@media (--bp-large) {
+
+	.grid-column {
+		margin-right: calc(var(--gutter-large) / 2);
+		margin-left: calc(var(--gutter-large) / 2);
+	}
+
+	.grid-column.-two {
+		flex-basis: calc(((100% / 12) * 2) - var(--gutter-large));
+	}
+
+	.grid-column.-three {
+		flex-basis: calc(((100% / 12) * 3) - calc(2 * var(--gutter-large)));
+	}
+
+	.grid-column.-four {
+		flex-basis: calc(((100% / 12) * 4) - calc(3 * var(--gutter-large)));
+	}
+
+	.grid-column.-five {
+		flex-basis: calc(((100% / 12) * 5) - calc(4 * var(--gutter-large)));
+	}
+
+	.grid-column.-six {
+		flex-basis: calc(((100% / 12) * 6) - calc(5 * var(--gutter-large)));
+	}
+
+	.grid-column.-seven {
+		flex-basis: calc(((100% / 12) * 7) - (6 * var(--gutter-large)));
+	}
+
+	.grid-column.-eight {
+		flex-basis: calc(((100% / 12) * 8) - calc(7 * var(--gutter-large)));
+	}
+
+	.grid-column.-nine {
+		flex-basis: calc(((100% / 12) * 9) - calc(8 * var(--gutter-large)));
+	}
+
+	.grid-column.-ten {
+		flex-basis: calc(((100% / 12) * 10) - calc(9 * var(--gutter-large)));
+	}
+
+	.grid-column.-eleven {
+		flex-basis: calc(((100% / 12) * 11) - calc(10 * var(--gutter-large)));
+	}
+
+	.grid-column.-twelve {
+		flex-basis: calc(((100% / 12) * 12) - calc(11 * var(--gutter-large)));
+	}
+}
