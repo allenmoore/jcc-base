@@ -1,6 +1,6 @@
 <?php
 
-namespace JCC\FndSESF\Modules\Header;
+namespace WPBase\Modules\Header;
 
 class Fonts {
 

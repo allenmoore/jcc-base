@@ -1,12 +1,12 @@
 {
-  "name": "JCC Engineering",
-  "short_name": "JCC Engineering",
-  "description": "Johnston Community College Engineering landing pages",
+  "name": "WP Base Theme",
+  "short_name": "WP Base",
+  "description": "Base Theme for WordPress",
   "display": "standalone",
-  "start_url": "https://www.johnstoncc.edu",
-  "background_color": "#232121",
+  "start_url": "",
+  "background_color": "#ffffff",
   "orientation": "any",
-  "theme_color": "#0055b8",
+  "theme_color": "#ffffff",
   "icons": [
       {
           "src": "/_resources/images/_favicons//android-chrome-36x36.png?v=M4K3djpWnG",

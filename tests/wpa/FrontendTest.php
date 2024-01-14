@@ -2,7 +2,7 @@
 /**
  * Test Frontent Functionality.
  *
- * @package JCC\FndSESF
+ * @package WPBase
  */
 
 use WPAcceptance\Exception\ElementNotFound as ElementNotFound;

@@ -1,6 +1,6 @@
 <?php
 
-namespace JCC\FndSESF\Modules\NavMenus;
+namespace WPBase\Modules\NavMenus;
 
 use \Walker_Nav_Menu;
 
@@ -77,7 +77,7 @@ class SocialNavWalker extends Walker_Nav_Menu {
 
 	public function render_svg_icon( $icon, $title ) {
 
-		$url = JCC_FND_SESF_URL;
+		$url = WPBASE_URL;
 
 		$content = '';
 		$content = '<div class="social-icon"><span class="icon -' . esc_attr( $icon ) . '"></span><span class="screen-reader-text">' . esc_html( $title ) . '</span></div>';

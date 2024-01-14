@@ -14,7 +14,7 @@
 		?>
 		<p class="submit">
 			<?php submit_button( 'Save Changes', 'primary', 'submit', false ); ?>
-			<button type="reset" class="button button-secondary"><?php esc_html_e( 'Reset Changes', 'jcc-fnd-sesf' ); ?></button>
+			<button type="reset" class="button button-secondary"><?php esc_html_e( 'Reset Changes', 'wpbase' ); ?></button>
 		</p>
 	</form>
 </div>

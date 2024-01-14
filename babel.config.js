@@ -1,7 +1,7 @@
 /**
  * Babel Config, .babelrc equivalent.
  *
- * @package TenUpScaffold
+ * @package WPBase
  *
  * @type {{presets: [[]|String|Object]}}
  */

@@ -1,6 +1,6 @@
 <?php
 
-namespace JCC\FndSESF\Modules\Header;
+namespace WPBase\Modules\Header;
 
 class FavIcons {
 
@@ -10,7 +10,7 @@ class FavIcons {
 
 	public function addIcons() {
 
-		$assetsUrl = trailingslashit( JCC_FND_SESF_URL . '/dist/images/device-icons' );
+		$assetsUrl = trailingslashit( WPBASE_URL . '/dist/images/device-icons' );
 		?>
 		<link rel="apple-touch-icon" sizes="60x60" href="<?php echo esc_url( $assetsUrl . 'apple-touch-icon-60x60.png' ); ?>">
 		<link rel="apple-touch-icon" sizes="76x76" href="<?php echo esc_url( $assetsUrl . 'apple-touch-icon-76x76.png' ); ?>">

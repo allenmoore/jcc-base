@@ -1,6 +1,6 @@
 <?php
 
-namespace JCC\FndSESF\Modules\NavMenus;
+namespace WPBase\Modules\NavMenus;
 
 use \Walker_Nav_Menu;
 

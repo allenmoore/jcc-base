@@ -6,5 +6,5 @@
 	<?php } ?>
 </select>
 <p class="description">
-	<?php esc_html_e( $desc, 'jcc-fnd-sesf' ); ?>
+	<?php esc_html_e( $desc, 'wpbase' ); ?>
 </p>

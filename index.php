@@ -2,7 +2,8 @@
 /**
  * The main template file
  *
- * @package JCC\FndSESF
+ * @package WPBase
+ * @since 1.0.1
  */
 
 get_header(); ?>

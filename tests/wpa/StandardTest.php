@@ -2,7 +2,7 @@
 /**
  * Test standard WP functionality
  *
- * @package JCC\FndSESF
+ * @package WPBase
  */
 
 /**

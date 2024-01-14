@@ -1,11 +1,11 @@
 <?php
 
-namespace JCC\FndSESF\Modules\Content;
+namespace WPBase\Modules\Content;
 
 /**
  * The Tables Class.
  *
- * @package JCC\FndSESF\Modules\Content
+ * @package WPBase\Modules\Content
  */
 class Tables {
 

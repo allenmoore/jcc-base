@@ -1,11 +1,11 @@
 <?php
 
-namespace JCC\FndSESF\Modules\GravityForms;
+namespace WPBase\Modules\GravityForms;
 
 /**
  * The FieldContainers Class.
  *
- * @package JCC\FndSESF\Modules\GravityForms
+ * @package WPBase\Modules\GravityForms
  */
 class FieldContainers {
 

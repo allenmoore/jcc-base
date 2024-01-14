@@ -9,8 +9,8 @@
 function getTemplateFile( $__tmplFile, array $__tmplData = [ ] ) {
 
 	$__tmplFile = apply_filters(
-		'jcc-fnd-sesf-template',
-		JCC_FND_SESF_PATH . "views/$__tmplFile.php",
+		'wpbase-template',
+		WPBASE_PATH . "views/$__tmplFile.php",
 		$__tmplFile,
 		$__tmplData
 	);
@@ -44,7 +44,7 @@ function getEventDates( $postId, $classes = null ) {
 				<?php echo tribe_get_start_date( $postId, true, 'F j' ); ?>
 			</div>
 			<div class="<?php echo esc_attr( 'date-separator' . $classes ); ?>">
-				<?php esc_html_e( '-', 'jcc-fnd-sesf' ); ?>
+				<?php esc_html_e( '-', 'wpbase' ); ?>
 			</div>
 			<div class="<?php echo esc_attr( 'event-date' . $classes ); ?>">
 				<?php echo tribe_get_end_date( $postId, true, 'F j, Y' ); ?>
@@ -77,7 +77,7 @@ function getEventLocation( $postId, $classes = null ) {
 
 	if ( $city && $state ) { ?>
 		<div class="<?php echo esc_attr( 'location-separator' . $classes ); ?>">
-			<?php esc_html_e( '|', 'jcc-fnd-sesf' ); ?>
+			<?php esc_html_e( '|', 'wpbase' ); ?>
 		</div>
 		<div class="<?php echo esc_attr( 'event-location' . $classes ); ?>">
 			<?php echo sprintf( '%1$s, %2$s', esc_html( $city ), esc_html( $state ) ); ?>
@@ -139,9 +139,9 @@ function getComments( $comment, $args, $depth ) {
 			<a href="<?php echo esc_url( $commentLink ); ?>" class="comment-link">
 				<?php echo sprintf( '<time class="comment-date" datetime="%1$sT%2$s" itemprop="datePublished">%3$s at %4$s</time>', esc_attr( $commentDateRaw ), esc_attr( $commentTimeRaw ), esc_html( $commentDate ), esc_html( $commentTime ) ); ?>
 			</a>
-			<?php edit_comment_link( esc_html_e( 'Edit', 'jcc-fnd-sesf' ), '<span class="comment-edit"><i class="icon-edit"></i>', '</span>' ); ?>
+			<?php edit_comment_link( esc_html_e( 'Edit', 'wpbase' ), '<span class="comment-edit"><i class="icon-edit"></i>', '</span>' ); ?>
 			<?php if ( '0' === $approvedComment ) { ?>
-				<p class="comment-status -pending"><?php esc_html_e( 'Your comment is awaiting moderation.', 'jcc-fnd-sesf' ); ?></p>
+				<p class="comment-status -pending"><?php esc_html_e( 'Your comment is awaiting moderation.', 'wpbase' ); ?></p>
 			<?php } ?>
 		</div>
 
@@ -167,7 +167,7 @@ function getPostAuthor() {
 	$authorLink = get_author_posts_url( get_the_author_meta( 'ID' ) );
 
 	?>
-	<div class="entry-author" itemscope itemprop="author" itemtype="http://schema.org/Person"><?php esc_html_e( 'Published by ', 'jcc-fnd-sesf' ); ?>
+	<div class="entry-author" itemscope itemprop="author" itemtype="http://schema.org/Person"><?php esc_html_e( 'Published by ', 'wpbase' ); ?>
 		<span class="author-name" itemprop="name"><a itemprop="url" href="<?php echo esc_url( $authorLink ); ?>"><?php the_author(); ?></a></span>
 	</div>
 	<?php
@@ -208,7 +208,7 @@ function getPostCategory( $postId ) {
 		$categoryLink = get_category_link( $categoryId );
 		?>
 		<div class="entry-category">
-			<?php esc_html_e( ' in ', 'jcc-fnd-sesf' );
+			<?php esc_html_e( ' in ', 'wpbase' );
 			echo sprintf( '<a href="%1$s" class="link" title="Permalink to: %2$s Archives">%2$s</a>', esc_url( $categoryLink ), esc_attr( $categoryName ) ); ?>
 		</div>
 	<?php }
@@ -219,7 +219,7 @@ function getPostCategory( $postId ) {
  */
 function getPostCommentCount() {
 
-	$url = JCC_FND_SESF_URL;
+	$url = WPBASE_URL;
 	?>
 	<div class="comment-count">
 		<a href="<?php esc_url( comments_link() ); ?>" class="comment-link"><?php inline_svg( 'comment' ); ?><span class="comment-response"><?php comments_number( 'No Responses', '1 Response', '% Responses' ); ?></span></a>

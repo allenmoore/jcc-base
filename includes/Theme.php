@@ -1,47 +1,47 @@
 <?php
 
-namespace JCC\FndSESF;
+namespace WPBase;
 
-use JCC\FndSESF\Admin\Options;
-use JCC\FndSESF\Modules\Content\Tables;
-use JCC\FndSESF\Modules\GravityForms\Fields as GFFields;
-use JCC\FndSESF\Modules\Header\FavIcons;
-use JCC\FndSESF\Modules\Header\Fonts;
+use WPBase\Admin\Options;
+use WPBase\Modules\Content\Tables;
+use WPBase\Modules\GravityForms\Fields as GFFields;
+use WPBase\Modules\Header\FavIcons;
+use WPBase\Modules\Header\Fonts;
 
 class Theme {
 
 	/**
 	 * Property representing the Options class.
 	 *
-	 * @var \JCC\FndSESF\Admin\Options
+	 * @var \WPBase\Admin\Options
 	 */
 	public $options;
 
 	/**
 	 * Property representing the Tables class.
 	 *
-	 * @var \JCC\FndSESF\Modules\Content\Tables
+	 * @var \WPBase\Modules\Content\Tables
 	 */
 	public $tables;
 
 	/**
 	 * Property representing the Fields class.
 	 *
-	 * @var \JCC\FndSESF\Modules\GravityForms\Fields
+	 * @var \WPBase\Modules\GravityForms\Fields
 	 */
 	public $gfFields;
 
 	/**
 	 * Property representing the FavIcons class.
 	 *
-	 * @var \JCC\FndSESF\Modules\Header\FavIcons
+	 * @var \WPBase\Modules\Header\FavIcons
 	 */
 	public $favIcons;
 
 	/**
 	 * Property representing the Fonts class.
 	 *
-	 * @var \JCC\FndSESF\Modules\Header\Fonts
+	 * @var \WPBase\Modules\Header\Fonts
 	 */
 	public $themeFonts;
 
@@ -76,9 +76,9 @@ class Theme {
 	 * Method to setup the textdomain.
 	 */
 	public function setupL10n() {
-		$locale = apply_filters( 'plugin_locale', get_locale(), 'jcc-fnd-sesf' );
-		load_textdomain( 'jcc-fnd-sesf', WP_LANG_DIR . '/jcc-fnd-sesf/jcc-fnd-sesf-' . $locale . '.mo' );
-		load_theme_textdomain( 'jcc-fnd-sesf', JCC_FND_SESF_PATH . '/languages' );
+		$locale = apply_filters( 'plugin_locale', get_locale(), 'wpbase' );
+		load_textdomain( 'wpbase', WP_LANG_DIR . '/wpbase/wpbase-' . $locale . '.mo' );
+		load_theme_textdomain( 'wpbase', WPBASE_PATH . '/languages' );
 	}
 
 	/**
@@ -86,13 +86,13 @@ class Theme {
 	 */
 	public function enqueueScripts() {
 		$min = defined( 'SCRIPT_DEBUG' ) && filter_var( SCRIPT_DEBUG, FILTER_VALIDATE_BOOLEAN ) ? '' : '.min';
-		$themeUrl = trailingslashit( JCC_FND_SESF_URL );
+		$themeUrl = trailingslashit( WPBASE_URL );
 
 		wp_enqueue_script(
-			'jcc-fnd-sesf-js',
+			'wpbase-js',
 			$themeUrl . 'dist/js/frontend.js',
 			array(),
-			JCC_FND_SESF_VERSION,
+			WPBASE_VERSION,
 			true
 		);
 
@@ -106,13 +106,13 @@ class Theme {
 	 */
 	public function enqueueStyles() {
 		$min = defined( 'SCRIPT_DEBUG' ) && filter_var( SCRIPT_DEBUG, FILTER_VALIDATE_BOOLEAN ) ? '' : '.min';
-		$themeUrl = trailingslashit( JCC_FND_SESF_URL );
+		$themeUrl = trailingslashit( WPBASE_URL );
 
 		wp_enqueue_style(
-			'jcc-fnd-sesf-style',
+			'wpbase-style',
 			$themeUrl . 'dist/css/style' . $min . '.css',
 			array(),
-			JCC_FND_SESF_VERSION,
+			WPBASE_VERSION,
 			'all'
 		);
 	}
@@ -121,7 +121,7 @@ class Theme {
 	 * Method to register theme menus.
 	 */
 	public function registerThemeMenus() {
-		register_nav_menus(['primary-navigation' => __( 'Primary Navigation', 'jcc-fnd-sesf' )]);
+		register_nav_menus(['primary-navigation' => __( 'Primary Navigation', 'wpbase' )]);
 	}
 
 	/**

@@ -2,8 +2,8 @@
 /**
  * The template for displaying the header.
  *
- * @package JCC\FndSESF
- * @since 1.0.0
+ * @package WPBase
+ * @since 1.0.1
  */
 
 ?>

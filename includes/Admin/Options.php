@@ -1,6 +1,6 @@
 <?php
 
-namespace JCC\FndSESF\Admin;
+namespace WPBase\Admin;
 
 class Options {
 
@@ -9,14 +9,14 @@ class Options {
 	 *
 	 * @var string The option group name.
 	 */
-	public $optGroup = 'jcc-fnd-sesf-options';
+	public $optGroup = 'wpbase-options';
 
 	/**
 	 * Property representing the options name.
 	 *
 	 * @var string The options name.
 	 */
-	public $optName = 'jcc-fnd-sesf-options';
+	public $optName = 'wpbase-options';
 
 	/**
 	 * Property representing the options page slug.
@@ -46,11 +46,11 @@ class Options {
 	 */
 	public function addMenuPage() {
 
-		$icon = JCC_FND_SESF_PATH . 'dist/svg/johnston-community-college-shield-logo.svg';
+		$icon = WPBASE_PATH . 'dist/svg/wpbase-logo.svg';
 
 		$this->_optionsPageHook = add_menu_page(
-			'JCC Foundation: Student Emergency Support Fund',
-			'JCC Foundation',
+			'WPBase',
+			'WPBase',
 			'manage_options',
 			$this->optName,
 			array( $this, 'renderOptionsPage' ),
@@ -65,7 +65,7 @@ class Options {
 
 		?>
 		<div class="wrap">
-			<h2 style="width: 350px;"><?php inline_svg( 'johnston-community-college-full-color-logo' ); ?></h2>
+			<h2 style="width: 350px;"><?php inline_svg( 'wpbase-full-color-logo' ); ?></h2>
 			<hr />
 			<form action="<?php echo esc_url( admin_url( 'options.php' ) ); ?>" method="post">
 				<?php
@@ -74,7 +74,7 @@ class Options {
 				?>
 				<p class="submit">
 					<?php submit_button( 'Save Changes', 'primary', 'submit', false ); ?>
-					<button type="reset" class="button button-secondary"><?php esc_html_e( 'Reset Changes', 'jcc-fnd-sesf' ); ?></button>
+					<button type="reset" class="button button-secondary"><?php esc_html_e( 'Reset Changes', 'wpbase' ); ?></button>
 				</p>
 			</form>
 		</div>
@@ -95,7 +95,7 @@ class Options {
 
 		add_settings_field(
 			'facebook',
-			__( 'Facebook', 'jcc-fnd-sesf' ),
+			__( 'Facebook', 'wpbase' ),
 			array( $this, 'facebookField'),
 			$this->_optionsPageHook,
 			'social-accounts'
@@ -103,7 +103,7 @@ class Options {
 
 		add_settings_field(
 			'twitter',
-			__( 'Twitter', 'jcc-fnd-sesf' ),
+			__( 'Twitter', 'wpbase' ),
 			array( $this, 'twitterField'),
 			$this->_optionsPageHook,
 			'social-accounts'
@@ -111,7 +111,7 @@ class Options {
 
 		add_settings_field(
 			'instagram',
-			__( 'Instagram', 'jcc-fnd-sesf' ),
+			__( 'Instagram', 'wpbase' ),
 			array( $this, 'instagramField'),
 			$this->_optionsPageHook,
 			'social-accounts'
@@ -245,7 +245,7 @@ class Options {
 							add_settings_error(
 								$name,
 								$name,
-								__( 'Please enter a username.', 'jcc-fnd-sesf' ),
+								__( 'Please enter a username.', 'wpbase' ),
 								'error ' . esc_html( $name )
 							);
 						}
@@ -258,7 +258,7 @@ class Options {
 							add_settings_error(
 								$name,
 								$name,
-								__( 'Please enter a username.', 'jcc-fnd-sesf' ),
+								__( 'Please enter a username.', 'wpbase' ),
 								'error ' . esc_html( $name )
 							);
 						}
@@ -271,7 +271,7 @@ class Options {
 							add_settings_error(
 								$name,
 								$name,
-								__( 'Please enter a username.', 'jcc-fnd-sesf' ),
+								__( 'Please enter a username.', 'wpbase' ),
 								'error ' . esc_html( $name )
 							);
 						}
@@ -284,7 +284,7 @@ class Options {
 							add_settings_error(
 								$name,
 								$name,
-								__( 'Please enter a username.', 'jcc-fnd-sesf' ),
+								__( 'Please enter a username.', 'wpbase' ),
 								'error ' . esc_html( $name )
 							);
 						}
@@ -306,6 +306,6 @@ class Options {
 		$min = defined( 'SCRIPT_DEBUG' ) && filter_var( SCRIPT_DEBUG, FILTER_VALIDATE_BOOLEAN ) ? '' : '.min';
 		$themeUrl = trailingslashit( get_stylesheet_directory_uri() );
 
-		wp_enqueue_style( 'jcc-fnd-sesf-admin', $themeUrl . 'dist/css/admin-style' . $min . '.css', [], JCC_FND_SESF_VERSION, 'all' );
+		wp_enqueue_style( 'wpbase-admin', $themeUrl . 'dist/css/admin-style' . $min . '.css', [], WPBASE_VERSION, 'all' );
 	}
 }

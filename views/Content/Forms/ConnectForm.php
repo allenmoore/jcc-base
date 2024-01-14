@@ -23,6 +23,6 @@
 		</div>
 		<input type="hidden" name="form_uuid" value="33bf7802-d193-450c-94b3-d9c0aec53573">
 		<input type="hidden" name="site_name" value="www">
-		<?php getTemplateFile( 'FormFields/SubmitButton', array( 'id' => 'btn_33bf7802-d193-450c-94b3-d9c0aec53573', 'label' => 'Submit the information request form and connect with Johnston Community College', 'tabindex' => '7', 'type' => 'submit', 'value' => 'Let\'s Connect' ) ); ?>
+		<?php getTemplateFile( 'FormFields/SubmitButton', array( 'id' => 'btn_33bf7802-d193-450c-94b3-d9c0aec53573', 'label' => 'Submit the information request form and connect with WPBase', 'tabindex' => '7', 'type' => 'submit', 'value' => 'Let\'s Connect' ) ); ?>
 	</form>
 </div>

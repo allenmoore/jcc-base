@@ -1,6 +1,6 @@
 <?php
 
-namespace JCC\FndSESF\Modules\GravityForms;
+namespace WPBase\Modules\GravityForms;
 
 class Fields {
 

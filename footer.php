@@ -2,8 +2,8 @@
 /**
  * Fires after the main content, before the footer is output.
  *
- * @package JCC\FndSESF
- * @since 1.0.0
+ * @package WPBase
+ * @since 1.0.1
  */
 ?>
 		<?php get_template_part( 'views/Layout/Global/Footer/Footer' ); ?>

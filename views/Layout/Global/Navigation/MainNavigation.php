@@ -1,6 +1,6 @@
 <?php
 
-$navWalker = new \JCC\FndSESF\Modules\NavMenus\NavWalker();
+$navWalker = new \WPBase\Modules\NavMenus\NavWalker();
 
 $mainNav = array(
 	'theme_location'  => 'primary-navigation',
